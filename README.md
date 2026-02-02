@@ -1,5 +1,8 @@
 This is a webservice that calculate the basket of a bookstore, depending on the basket discount can be applied.
 
+This application is written in Java 17
+
+To compile it execute: mvn clean install
 
 To run it locally use the command: mvn spring-boot:run
 
