@@ -1,6 +1,6 @@
 [
   {
-    "Book": {
+    "book": {
       "name": "Clean Code",
       "author": "Robert Martin",
       "year": "2008",
@@ -9,7 +9,7 @@
     "quantity": 1
   },
   {
-    "Book": {
+    "book": {
       "name": "The Clean Coder",
       "author": "Robert Martin",
       "year": "2011",
@@ -18,7 +18,7 @@
     "quantity": 1
   },
   {
-    "Book": {
+    "book": {
       "name": "Clean Architecture",
       "author": "Robert Martin",
       "year": "2017",
@@ -27,7 +27,7 @@
     "quantity": 1
   },
   {
-    "Book": {
+    "book": {
       "name": "Test Driven Development by Example",
       "author": "Kent Beck",
       "year": "2003",
@@ -36,7 +36,7 @@
     "quantity": 1
   },
   {
-    "Book": {
+    "book": {
       "name": "Working Effectively With Legacy Code",
       "author": "Michael C. Feathers",
       "year": "2004",
