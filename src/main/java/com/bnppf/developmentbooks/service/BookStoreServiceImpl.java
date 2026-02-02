@@ -11,6 +11,7 @@ import java.util.stream.Collectors;
 
 @Service
 public class BookStoreServiceImpl implements BookStoreService {
+
     private static final Map<Integer, Double> DISCOUNTS = Map.of(
             1, 0.0,
             2, 0.05,
