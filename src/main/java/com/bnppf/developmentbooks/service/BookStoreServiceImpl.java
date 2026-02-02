@@ -39,9 +39,14 @@ public class BookStoreServiceImpl implements BookStoreService {
 
     public List<BookQuantity> mergeDuplicates(List<BookQuantity> basket) {
         Map<Book, Integer> merged = new HashMap<>();
+
         for (BookQuantity bq : basket) {
-            merged.merge(bq.getBook(), bq.getQuantity(), Integer::sum);
+            Book book = bq.getBook();
+            int qty = bq.getQuantity();
+
+            merged.merge(book, qty, Integer::sum);
         }
+
 
         return merged.entrySet().stream().map(e -> new BookQuantity(e.getKey(), e.getValue())).collect(Collectors.toList());
     }

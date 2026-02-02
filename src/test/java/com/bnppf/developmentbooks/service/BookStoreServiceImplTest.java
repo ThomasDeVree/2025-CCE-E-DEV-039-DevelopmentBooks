@@ -69,6 +69,17 @@ public class BookStoreServiceImplTest {
     }
 
     @Test
+    void twoTimesTheSameBookAndDifferentQuantity() {
+        List<BookQuantity> basket = new ArrayList<>();
+        basket.add(new BookQuantity(b1, 2));
+        basket.add(new BookQuantity(b1, 1));
+
+        String result = service.getPriceForBasket(basket);
+
+        assertEquals("150.0 EUR", result);
+    }
+
+    @Test
     void twoTimesTheSameBookAndAnother() {
         List<BookQuantity> basket = new ArrayList<>();
         basket.add(new BookQuantity(b1, 1));
